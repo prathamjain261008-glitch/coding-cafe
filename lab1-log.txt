@@ -1,0 +1,40 @@
+pwd
+ls
+ls -Force
+cd ~
+mkdir coding-cafe
+cd coding-cafe
+mkdir week01
+mkdir week02
+ni README.md
+ni week02\notes.md
+ls coding-cafe\week02
+cp README.md README-backup.md
+mv README-backup.md week01\
+cd week01
+mv README-backup.md old-readme.md
+ls
+rm old-readme.md
+cd ..
+$env:Path
+$env:Path -split ';'
+Get-Command python
+Get-Command pip
+pyton
+python -m venv .venv
+ls
+ls -Force
+.venv\Scripts\Activate.ps1
+Get-Command python
+pip list
+pip install requests
+pip list
+deactivate
+Get-Command python
+help Get-ChildItem
+help help
+history
+python
+Ctrl+C
+Ctrl+Z
+history | Select-Object -ExpandProperty CommandLine > week02\lab01-log.txt
